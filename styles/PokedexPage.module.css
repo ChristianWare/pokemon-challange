@@ -1,0 +1,65 @@
+.PokedexPageContainer {
+    background-color: var(--pokepagebg);
+    padding: 8rem;
+    position: relative;
+    height: 200vh;
+}
+
+.logoutBtn {
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--loginForm);
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftBottom {
+    height: 90px;
+    background-color: var(--paginationBg);
+    border-bottom-left-radius: 8px;
+}
+
+.leftTop {
+    padding: 5rem;
+    padding-bottom: 0rem;
+}
+
+.right {
+    flex: 2;
+    background-color: var(--detailpagebg);
+    border-radius: 0px 8px 8px 0px;
+}
+
+@media screen and (max-width: 1180px) {
+    .content {  
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
+}
+
+    .right {
+        order: 1;
+    }
+    .left {
+        order: 2;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .PokedexPageContainer {
+    padding: 2rem;
+}
+}

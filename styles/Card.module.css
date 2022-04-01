@@ -1,0 +1,82 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.itemMap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--loginFormInput);
+    height: 75px;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5rem;
+}
+
+.itemMap:hover {
+    border: 2px solid var(--yellow);
+}
+
+.imgContainer {
+    margin-left: 2rem;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font)
+}
+
+.paginationBtnsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    list-style: none;
+    color: var(--font);
+    padding: 2.8rem;
+    margin-bottom: -7.5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.paginationBtnsContainer a {
+    background-color: var(--loginForm);
+    border-radius: 8px;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.activeBtn {
+    color: var(--yellow);
+}
+
+
+@media screen and (max-width: 1220px) {
+    .itemMap {
+        padding: 0rem;
+        padding-left: 1rem;
+    }
+
+    .imgContainer {
+        margin: 0rem;
+    }
+}
