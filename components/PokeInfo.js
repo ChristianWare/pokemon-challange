@@ -6,9 +6,7 @@ function PokeInfo({ data }) {
       <div className={styles.topHeader}>
         {!data ? (
           <>
-            <h1 className={styles.heading}>
-              Select a Pokemon
-            </h1>
+            <h1 className={styles.heading}>Select a Pokemon</h1>
           </>
         ) : (
           <>
@@ -49,8 +47,9 @@ function PokeInfo({ data }) {
                       <p className={styles.description}>
                         {data.name} is a {data.classification}. It can weigh
                         anywhere from {data.weight.minimum} to{" "}
-                        {data.weight.maximum}. {data.name}'s can grow anywhere
-                        from {data.height.minimum} to {data.height.maximum}.
+                        {data.weight.maximum}. {data.name}&apos;s can grow
+                        anywhere from {data.height.minimum} to{" "}
+                        {data.height.maximum}.
                       </p>
                     </div>
                   </div>
