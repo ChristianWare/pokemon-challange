@@ -1,8 +1,9 @@
 .PokedexPageContainer {
     background-color: var(--pokepagebg);
     padding: 8rem;
-    position: relative;
-    height: 200vh;
+    /* position: relative; */
+    /* margin-bottom: 150rem; */
+    height: 300vh;
 }
 
 .logoutBtn {
