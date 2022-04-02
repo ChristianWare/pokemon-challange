@@ -1,9 +1,8 @@
 .PokedexPageContainer {
     background-color: var(--pokepagebg);
     padding: 8rem;
-    /* position: relative; */
-    /* margin-bottom: 150rem; */
     height: 300vh;
+    /* overflow: hidden; */
 }
 
 .logoutBtn {
@@ -46,7 +45,7 @@
 
 @media screen and (max-width: 1180px) {
     .content {  
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     grid-auto-flow: dense;
 }
 
@@ -58,9 +57,14 @@
     }
 }
 
-
 @media screen and (max-width: 650px) {
     .PokedexPageContainer {
     padding: 2rem;
+    margin: 2rem;
+    }
 }
+
+@media screen and (max-width: 510px) {
+ 
 }
+
